@@ -81,7 +81,7 @@ export default defineComponent({
 				data.forEach((itemdict) => {
 
 					for (let key in itemdict) {
-						 if (key.replace('"','') == "STATE_CODE") {
+						 if (key.replace('"','') == displayField) {
 							let keyvalue = itemdict[key];
 							itemlist.value.push({
 				                text: keyvalue,
